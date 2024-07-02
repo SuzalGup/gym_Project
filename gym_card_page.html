@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card_page</title>
+    <link rel="stylesheet" href="gym_card_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="raper">
+            <div class="product_box">
+                <div class="all_img">
+                    <div class="small_img">
+                        <img src="https://m.media-amazon.com/images/I/616663Cyu5L._SX522_.jpg" alt=""
+                            onclick="clickimg(this)">
+                        <img src="https://m.media-amazon.com/images/I/61BzMgNvjhL._SX522_.jpg" alt=""
+                            onclick="clickimg(this)">
+                        <img src="https://m.media-amazon.com/images/I/61LYS98WgsL._SX522_.jpg" alt=""
+                            onclick="clickimg(this)">
+                        <img src="https://m.media-amazon.com/images/I/61Eec4xeHGL._SX522_.jpg" alt=""
+                            onclick="clickimg(this)">
+                        <img src="https://m.media-amazon.com/images/I/71VhI3kMcKL._SX522_.jpg" alt=""
+                            onclick="clickimg(this)">
+                    </div>
+                    <div class="maain_img">
+                        <img src="https://m.media-amazon.com/images/I/616663Cyu5L._SX522_.jpg" alt="" id="main_img_box">
+                    </div>
+                </div>
+            </div>
+            <div class="text_section">
+                <div class="text_cont">
+                    <p class="text_pera">Brand : APNA</p>
+                    <h2 class="text_h2">Leeway Rubber Coated Bouncer Dumbbell</h2>
+                    <div class="review">
+                        <span>(4.3)</span>
+                        <span><i class="fa-solid fa-star"></i></span>
+
+                    </div>
+                    <div class="price_box">
+                        <p class="price">&#8377; 600</p>
+                        <strike>&#8377; 3600</strike>
+                    </div>
+                    <p>Weight : <select name="Weight">
+                            <option value="select Weight">select Weight</option>
+                            <option value="30kg">30kg</option>
+                            <option value="40kg">40kg</option>
+                            <option value="50kg">50kg</option>
+                        </select></p>
+
+                    <p>Quantity <input type="text" value="1"></p>
+                    <button>
+                        <span><i class="fa-solid fa-cart-shopping"></i>
+                            Add to Card</span>
+                    </button>
+                    <button>
+                        <span><i class="fa-solid fa-cart-shopping"></i>
+                            Buy Now</span>
+                    </button>
+                </div>
+                <div class="pera_2">
+                    <h3>About this item</h3>
+                    <p class="sec_pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam
+                        dignissimos voluptatibus,
+                        dolor nemo enim expedita iusto quia animi fugiat, neque mollitia ea! Quibusdam voluptatem sequi,
+                        natus veritatis deserunt provident magni aliquid voluptatibus ex incidunt necessitatibus
+                        doloribus
+                        nostrum aliquam, voluptas, quae eum corporis? Totam illo commodi voluptatum, eum laudantium
+                        dicta?
+                    </p>
+                </div>
+                <div class="offer_section">
+                    <i class="fa-solid fa-percent"> Offers </i>  
+                    <div class="box_cont_2">
+                        <div class="offer_box">
+                            <h3>No Cost EMI</h3>
+                            <p>Upto ₹567.09 EMI interest savings on Amazon Pay ICICI…</p>
+                            <a href="">2 offers<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                        <div class="offer_box">
+                            <h3>Bank Offer</h3>
+                            <p>Upto ₹567.09 EMI interest savings on Amazon Pay ICICI…</p>
+                            <a href="">2 offers<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                        <div class="offer_box">
+                            <h3>Partner Offers</h3>
+                            <p>Upto ₹567.09 EMI interest savings on Amazon Pay ICICI…</p>
+                            <a href="">2 offers <i class="fa-solid fa-caret-right"> </i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    function clickimg(smallImg){
+        var Fullimg = document.getElementById("main_img_box")
+        Fullimg.src = smallImg.src
+    }
+</script>
+
+</html>

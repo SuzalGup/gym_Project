@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    background: url(gym_project_img/login_form_img.jpg);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background-size: cover;
+}
+.navbar_1 {
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px 80px;
+    /* border-bottom: 0.001rem solid gray; */
+
+}
+.navbar_1 .navbar_left h1 {
+    font-size: 2.5em;
+    color: orangered;
+    user-select: none;
+
+}
+
+.navbar_1 .navbar_left h1 span {
+    color: #fff;
+}
+.navbar_mid {
+    display: flex;
+
+    width: 750px;
+    height: 40px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.select_search {
+    background-color: orangered;
+    width: 60px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+}
+.input_search {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 0px 30px;
+    /* background-color: transparent; */
+    /* color: orangered; */
+
+}
+.search_icon {
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: orangered;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.nav-search:hover {
+    border: 2.5px solid #febd68;
+}
+.navbar_right .btn {
+    width: 110px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid orangered;
+    outline: none;
+    border-radius: 6px;
+    color: orangered;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 0.5s;
+
+}
+
+.navbar_right .btn i {
+    font-size: 0.90rem;
+    margin-left: 5px;
+
+}
+
+.navbar_right .btn:hover {
+    color: #fff;
+    background: orangered;
+}
+
+
+
+
+.navbar_2 {
+    width: 100%;
+    height: 90px;
+    line-height: 60px;
+}
+
+.navbar_2 ul {
+    list-style: none;
+    text-align: center;
+
+
+}
+
+.navbar_2 ul li {
+    display: inline-block;
+    width: 170px;
+    position: relative;
+    z-index: 99;
+}
+.navbar_2 ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.navbar_2 ul li a i {
+    color: orangered;
+    margin: 10px;
+}
+
+.navbar_2 ul li a:hover i {
+    color: #ffffff;
+}
+.navbar_2 ul ul {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    height: 430px;
+    background-color: #222;
+    text-align: left;
+    border-bottom: 0.001rem solid rgba(255, 68, 0, 0.632);
+    border-left: 0.001rem solid rgba(255, 68, 0, 0.632);
+    border-right: 0.001rem solid rgba(255, 68, 0, 0.632);
+    border-radius: 5px;
+    display: none;
+    transition: 0.6s;
+    width: 165px;
+
+}
+.navbar_2 ul li:hover>ul {
+    display: block;
+    transition: 0.6s;
+}
+
+.navbar_2 ul li:hover #down {
+    transform: rotate(180deg);
+    /* transition: 0.4s; */
+}
+.box{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(255, 255, 255,.5);
+    right: 40%;
+}
+.box i{
+    top: 0 ;
+    right: 0;
+}
+.box .inside_box{
+    width: 100%;
+    padding: 40px;
+}
+.box .inside_box.Login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.box .inside_box.register{
+    position: absolute;
+    transform: translateX(400px);
+}
+.box .icon{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    font-size: 20px;
+    display: flex;
+    color: orangered;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9;   
+}
+.inside_box h2{
+    font-size: 2em;
+    color: orangered;
+    align-items: center;
+    position: relative;
+    top: -36px;
+    left: 98px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.input_box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+} 
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-30px);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input_box input:focus~label,
+.input_box input:valid~label{
+    top: 2px;
+}
+.input_box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding-top: 17px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+}
+.input_box .icon_input{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: orangered;
+    line-height: 57px;   
+}
+.forget_pass{
+    color: #fff;
+    font-size: .9em;
+    font-weight: 400;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: center;
+}
+.forget_pass label input{
+    color: #fff;
+    margin-right: 3px;
+}
+.forget_pass a{
+    text-decoration: none;
+    padding-left: 4px;
+}
+.btn-1{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    color: orangered;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+.btn-1:hover{
+    color: #fff;
+    background: orangered;
+}
+.reminder{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    margin: 4px;
+    
+}
+.reminder p a{
+    text-decoration: none;
+    color: orangered;
+}
+.reminder p a:hover{
+    text-decoration: underline;
+}
+.forget_pass a{
+    color: #fff;
+    text-decoration: underline;
+}
+.social_midia{
+    display: flex;
+    justify-content: center;
+}
+.social_mid_icon{
+    height: 45px;
+    width: 45px;
+    
+    margin: 0.55rem 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.social_mid_icon:hover{
+    background-color: transparent;
+    color: orangered;
+}
